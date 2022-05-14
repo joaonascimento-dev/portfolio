@@ -1,0 +1,30 @@
+/* body {
+    background-image: url("img/971.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.navbar-div {
+    background-color: #241d47;
+}
+
+#navbar-titulo {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#navbar-foto {
+    height: 100px;
+}
+
+.navbar-link:hover {
+    color: yellow !important;
+}
+
+.banner {
+    height: 700px;
+    background-image: url("img/banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
