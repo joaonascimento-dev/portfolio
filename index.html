@@ -12,7 +12,7 @@
     <title>Hello, world!</title>
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark" onload="myFunction()">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -21,7 +21,8 @@
         <div class="px-3 py-2 navbar-div text-white">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
-                    <a id="navbar-titulo" href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none fs-3">
+                    <a id="navbar-titulo" href="/"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none fs-3">
                         <!--svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
                             <use xlink:href="#bootstrap"></use>
                         </svg>
@@ -57,13 +58,64 @@
     </header>
 
     <div class="container-fluid">
-        <div class="row banner">
+        <div class="row d-flex banner">
             <!--img src="img/banner2.png" alt="banner" class="img-fluid banner"-->
-            <p class="text-white">Desenvolvedor de aplicativos Java</p>
+            <p class="fs-2 text-white shadow-lg" id="banner-texto">Desenvolvedor de aplicativos <span class="text-warning fw-bold typeText"></span></p>
+
         </div>
-        
+
     </div>
 
 </body>
+
+<script>
+    function myFunction() {
+        //document.getElementById("banner-texto").style.fontSize = "35px";
+    }
+
+    var typeText = document.querySelector(".typeText")
+    var textToBeTyped = "a software engineer"
+    var textToBeTypedArr = ["Java", "Web"]
+    var index = 0, isAdding = true, textToBeTypedIndex = 0
+
+    function playAnim() {
+        setTimeout(function () {
+            // set the text of typeText to a substring of the text to be typed using index.
+            typeText.innerText = textToBeTypedArr[textToBeTypedIndex].slice(0, index)
+            if (isAdding) {
+                // adding text
+                if (index > textToBeTypedArr[textToBeTypedIndex].length) {
+                    // no more text to add
+                    isAdding = false
+                    typeText.classList.add("showAnim")
+                    //break: wait 2s before playing again
+                    setTimeout(function () {
+                        typeText.classList.remove("showAnim")
+                        playAnim()
+                    }, 2000)
+                    return
+                } else {
+                    // increment index by 1
+                    index++
+                }
+            } else {
+                // removing text
+                if (index === 0) {
+                    // no more text to remove
+                    isAdding = true
+                    //switch to next text in text array
+                    textToBeTypedIndex = (textToBeTypedIndex + 1) % textToBeTypedArr.length
+                } else {
+                    // decrement index by 1
+                    index--
+                }
+            }
+            // call itself
+            playAnim()
+        }, isAdding ? 120 : 60)
+    }
+    // start animation
+    playAnim()
+</script>
 
 </html>
