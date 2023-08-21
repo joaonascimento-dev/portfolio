@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="app.css">
-    <title>Hello, world!</title>
+    <title>Portfólio JN Dev</title>
 </head>
 
 <body class="bg-dark" onload="myFunction()">
@@ -27,28 +27,29 @@
                             <use xlink:href="#bootstrap"></use>
                         </svg>
                         <img id="navbar-foto" src="img/fotogit2.png" alt="João Nascimento" class="image-fluid border-circle"-->
-                        <i class="bi bi-cpu"></i> João Nascimento
+                        <!--i class="bi bi-cpu"></i> João Nascimento-->
+                        <img src="img/logo.png" alt="Logo João Nascimento" class="img-fluid logo">
                     </a>
 
                     <ul class="nav row my-2 justify-content-center fs-5">
-                        <li class="col-12 col-md-3">
+                        <li class="col-6 col-md-3">
                             <a href="#" class="nav-link navbar-link text-white text-center d-md-grid">
-                                <i class="bi bi-house"></i> Home
+                                <i class="bi bi-house"></i> <span class="">Home</span>
                             </a>
                         </li>
-                        <li class="col-12 col-md-3">
+                        <li class="col-6 col-md-3">
                             <a href="#" class="nav-link navbar-link text-white text-center d-md-grid">
-                                <i class="bi bi-info-circle"></i> Sobre
+                                <i class="bi bi-info-circle"></i> <span class="">Sobre</span>
                             </a>
                         </li>
-                        <li class="col-12 col-md-3">
+                        <li class="col-6 col-md-3">
                             <a href="#" class="nav-link navbar-link text-white text-center d-md-grid">
-                                <i class="bi bi-github"></i> GitHub
+                                <i class="bi bi-github"></i> <span class="">GitHub</span>
                             </a>
                         </li>
-                        <li class="col-12 col-md-3">
+                        <li class="col-6 col-md-3">
                             <a href="#" class="nav-link navbar-link text-white text-center d-md-grid">
-                                <i class="bi bi-phone"></i> Contato
+                                <i class="bi bi-phone"></i> <span class="">Contato</span>
                             </a>
                         </li>
                     </ul>
@@ -66,6 +67,10 @@
 
     </div>
 
+    <div class="bg-dark" style="height: 500px;">
+        
+    </div>
+
 </body>
 
 <script>
@@ -74,8 +79,7 @@
     }
 
     var typeText = document.querySelector(".typeText")
-    var textToBeTyped = "a software engineer"
-    var textToBeTypedArr = ["Java", "Web"]
+    var textToBeTypedArr = ["Web", "Desktop", "Mobile", "Rest"]
     var index = 0, isAdding = true, textToBeTypedIndex = 0
 
     function playAnim() {

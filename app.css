@@ -22,8 +22,7 @@
 }
 
 .banner {
-    height: 700px;
-    background-image: url("img/banner2.png");
+    background-image: url("img/banner3.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -38,14 +37,44 @@
 .typeText::after {
     content: "|";
     /* animation: blink 1s step-end infinite; */
-    animation:  none;
-  }
-  
-  .showAnim.typeText::after {
+    animation: none;
+}
+
+.showAnim.typeText::after {
     animation: blink 1s step-end infinite;
-  }
-  
-  @keyframes blink {
-    0%, 100% {opacity: 1;}
-    50% {opacity: 0;}
-  }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* Apenas Desktop */
+@media only screen and (min-width: 768px) {
+    .logo{
+        height: 90px;
+    }
+
+    .banner {
+        height: 700px;
+    }
+}
+
+/* Apenas Celular */
+@media only screen and (max-width: 767px) {
+    .logo{
+        height: 70px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+}
