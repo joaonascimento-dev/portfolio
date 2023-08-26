@@ -44,6 +44,32 @@
     animation: blink 1s step-end infinite;
 }
 
+.titulo {
+    position: relative;
+}
+
+/*.titulo:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}*/
+
+.titulo:after {
+    content: '';
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    background-image: linear-gradient(to right,  #a930fb, yellow);
+    border-radius: 10px;
+    z-index: -1;
+}
+
 @keyframes blink {
 
     0%,
@@ -66,6 +92,10 @@
     .banner {
         height: 700px;
     }
+
+    .titulo:after {
+        width: 30%;
+    }
 }
 
 /* Apenas Celular */
@@ -76,5 +106,9 @@
 
     .banner {
         height: 300px;
+    }
+
+    .titulo:after {
+        width: 40%;
     }
 }
