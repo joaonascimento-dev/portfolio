@@ -22,29 +22,29 @@
         <div class="px-3 py-2 navbar-div text-white">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-start">
-                    <a id="navbar-titulo" href="/"
+                    <a id="navbar-titulo" href="#"
                         class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none fs-3">
                         <img src="img/logo.png" alt="Logo João Nascimento" class="img-fluid logo">
                     </a>
 
-                    <ul class="nav row my-2 justify-content-center fs-5">
-                        <li class="col-6 col-md-3">
+                    <ul class="nav row my-2 justify-content-center fs-5 navbar-links">
+                        <!--li class="col-6 col-md-3">
                             <a href="#" class="nav-link navbar-link text-white text-center d-md-grid">
                                 <i class="bi bi-house-fill"></i> <span class="">Ínicio</span>
                             </a>
-                        </li>
-                        <li class="col-6 col-md-3">
-                            <a href="#" class="nav-link navbar-link text-white text-center d-md-grid">
+                        </li-->
+                        <li class="col-12 col-md-4">
+                            <a href="#sobre" class="nav-link navbar-link text-white text-center d-md-grid">
                                 <i class="bi bi-info-circle-fill"></i> <span class="">Sobre</span>
                             </a>
                         </li>
-                        <li class="col-6 col-md-3">
-                            <a href="#" class="nav-link navbar-link text-white text-center d-md-grid">
+                        <li class="col-12 col-md-4">
+                            <a href="#tecnologias" class="nav-link navbar-link text-white text-center d-md-grid">
                                 <i class="bi bi-code-slash"></i> <span class="">Tecnologias</span>
                             </a>
                         </li>
-                        <li class="col-6 col-md-3">
-                            <a href="#" class="nav-link navbar-link text-white text-center d-md-grid">
+                        <li class="col-12 col-md-4">
+                            <a href="#projetos" class="nav-link navbar-link text-white text-center d-md-grid">
                                 <i class="bi bi-display"></i> <span class="">Projetos</span>
                             </a>
                         </li>
@@ -64,7 +64,7 @@
     </div>
 
     <div class="container mt-3">
-        <h1 class="text-white titulo">Sobre</h1>
+        <h1 class="text-white titulo" id="sobre">Sobre</h1>
         <div class="row row-cols-1 row-cols-md-2 text-white px-2 row-gap-1">
             <div class="col py-2 px-3 border border-secondary rounded-5 bg-secondary bg-opacity-10">
                 <h3 class="border-bottom border-secondary">Pessoal</h3>
@@ -107,29 +107,47 @@
             </div>
         </div>
 
-        <h1 class="text-white titulo">Tecnologias</h1>
+        <h1 class="text-white titulo" id="tecnologias">Tecnologias</h1>
         <div class="row row-cols-md-6 row-cols-2 text-center g-2">
             <div class="col">
-                <img src="https://placehold.jp/150x150.png" alt="" class="img-fluid">
+                <img src="img/tecnologias/html.png" alt="" class="img-fluid rounded">
             </div>
             <div class="col">
-                <img src="https://placehold.jp/150x150.png" alt="" class="img-fluid">
+                <img src="img/tecnologias/css.png" alt="" class="img-fluid rounded">
             </div>
             <div class="col">
-                <img src="https://placehold.jp/150x150.png" alt="" class="img-fluid">
+                <img src="img/tecnologias/javascript.png" alt="" class="img-fluid rounded">
             </div>
             <div class="col">
-                <img src="https://placehold.jp/150x150.png" alt="" class="img-fluid">
+                <img src="img/tecnologias/bootstrap.png" alt="" class="img-fluid rounded">
             </div>
             <div class="col">
-                <img src="https://placehold.jp/150x150.png" alt="" class="img-fluid">
+                <img src="img/tecnologias/java.png" alt="" class="img-fluid rounded">
             </div>
             <div class="col">
-                <img src="https://placehold.jp/150x150.png" alt="" class="img-fluid">
+                <img src="img/tecnologias/spring.png" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col">
+                <img src="img/tecnologias/mysql.png" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col">
+                <img src="img/tecnologias/github.png" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col">
+                <img src="img/tecnologias/vazio.png" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col">
+                <img src="img/tecnologias/vazio.png" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col">
+                <img src="img/tecnologias/vazio.png" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col">
+                <img src="img/tecnologias/vazio.png" alt="" class="img-fluid rounded">
             </div>
         </div>
 
-        <h1 class="text-white mt-3 titulo">Projetos</h1>
+        <h1 class="text-white mt-3 titulo" id="projetos">Projetos</h1>
         <div id="carouselExample" class="carousel slide mt-3">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -158,6 +176,8 @@
                                     class="badge rounded-pill bg-opacity-25 bg-secondary border border-1 border-white">Maven</span>
                                 <span
                                     class="badge rounded-pill bg-opacity-25 bg-secondary border border-1 border-white">MySQL</span>
+                                <span
+                                    class="badge rounded-pill bg-opacity-25 bg-secondary border border-1 border-white">Desktop</span>
                             </div>
                             <div class="col-2"></div>
                         </div>
@@ -183,9 +203,10 @@
         </div>
     </div>
 
-    <div class="bg-black mt-3" style="height: 120px;">
-        <div class="container text-white text-center pt-5">
-            <span class="mt-5">Desenvolvido por João Nascimento</span>
+    <div class="bg-black mt-5">
+        <div class="container text-white text-center py-5">
+            <span class="d-block">Desenvolvido por João Nascimento</span>
+            <a class="link-light" href="#navbar-titulo">Voltar ao Topo</a>
         </div>
     </div>
 

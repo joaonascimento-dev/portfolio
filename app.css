@@ -96,6 +96,10 @@
     .titulo:after {
         width: 30%;
     }
+
+    .navbar-links {
+        width: 50% !important;
+    }
 }
 
 /* Apenas Celular */
@@ -110,5 +114,9 @@
 
     .titulo:after {
         width: 40%;
+    }
+
+    .navbar-links {
+        width: 100% !important;
     }
 }
