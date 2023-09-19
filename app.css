@@ -100,6 +100,10 @@
     .navbar-links {
         width: 50% !important;
     }
+
+    #carouselProjetos {
+        min-height: 650px;
+    }
 }
 
 /* Apenas Celular */
@@ -118,5 +122,9 @@
 
     .navbar-links {
         width: 100% !important;
+    }
+
+    #carouselProjetos {
+        min-height: 450px;
     }
 }
