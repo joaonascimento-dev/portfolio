@@ -75,6 +75,14 @@
     background-image: linear-gradient(#171a1d, #16122c);
 }
 
+.gradient-left {
+    background-image: linear-gradient(to left,#ffffff00, #171a1d77);
+}
+
+.gradient-right {
+    background-image: linear-gradient(to right,#ffffff00, #171a1d77);
+}
+
 @keyframes blink {
 
     0%,
