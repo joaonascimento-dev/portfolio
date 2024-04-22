@@ -29,11 +29,6 @@
     background-position-x: 50%;
 }
 
-#banner-texto {
-    padding-top: 24%;
-    padding-left: 10%;
-}
-
 .typeText::after {
     content: "|";
     /* animation: blink 1s step-end infinite; */
@@ -106,6 +101,11 @@
         height: 700px;
     }
 
+    #banner-texto {
+        padding-top: 24%;
+        padding-left: 10%;
+    }
+
     .titulo:after {
         width: 30%;
     }
@@ -140,6 +140,11 @@
 
     .banner {
         height: 300px;
+    }
+
+    #banner-texto {
+        padding-top: 45%;
+        padding-left: 10%;
     }
 
     .titulo:after {
